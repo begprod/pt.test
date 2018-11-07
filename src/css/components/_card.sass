@@ -22,6 +22,11 @@
 		height: 100%
 		background-color: $blue-8ab
 		z-index: 1
+	&:hover
+		.card__img
+			animation: tada 1s ease-in-out
+			img
+				transform: scale(1.3)
 	&__inner
 		position: relative
 		z-index: 2
@@ -66,6 +71,8 @@
 			width: 100%
 			height: 100%
 			object-fit: cover
+			transition: .3s ease-in-out
+			transition-property: transform
 	&__info-icon
 		margin-top: 10px
 		margin-right: 27px
@@ -76,7 +83,7 @@
 		color: $blue-456
 		font-size: 17px
 		font-style: italic
-		transform: rotate(90deg)
+		transform: rotate(90deg) translateZ(0)
 		text-decoration: none
 	&__dots
 		position: absolute
