@@ -1,0 +1,50 @@
+.i-star
+	position: relative
+	display: inline-block
+	width: 0
+	height: 0
+	margin-left: .9em
+	margin-right: .9em
+	margin-bottom: 1.2em
+	border-right:  .3em solid transparent
+	border-bottom: .7em  solid $blue-456
+	border-left:   .3em solid transparent
+	font-size: 20px
+	&::after, &::before
+		content: ''
+		position: absolute
+		top: .6em
+		left: -1em
+		display: block
+		width: 0
+		height: 0
+		border-right:  1em solid transparent
+		border-bottom: .7em  solid $blue-456
+		border-left:   1em solid transparent
+		transform: rotate(-35deg)
+	&::after
+		transform: rotate(35deg)
+
+.i-info
+	position: relative
+	width: 92px
+	height: 73px
+	background-color: $blue-8ab
+	&::before
+		content: "i"
+		position: absolute
+		top: 50%
+		left: 50%
+		font-size: 65px
+		font-weight: bold
+		color: $blue-cdd
+		transform: translate(-50%, -50%)
+	&::after
+		content: ""
+		position: absolute
+		top: 100%
+		left: 25px
+		width: 0
+		height: 0
+		border-top: 10px solid $blue-8ab
+		border-right: 10px solid transparent

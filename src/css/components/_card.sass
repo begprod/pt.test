@@ -1,0 +1,96 @@
+.card
+	position: relative
+	margin-top: 110px
+	padding: 45px 40px 60px 80px
+	width: 520px
+	color: $blue-456
+	text-align: left
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: $blue-cdd
+		z-index: 2
+	&::after
+		content: ""
+		position: absolute
+		top: 20px
+		left: 20px
+		width: 100%
+		height: 100%
+		background-color: $blue-8ab
+		z-index: 1
+	&__inner
+		position: relative
+		z-index: 2
+		&::after
+			content: ""
+			position: absolute
+			right: -60px
+			bottom: -80px
+			width: 50px
+			height: 50px
+			border-radius: 100%
+			background-color: $blue-8ab
+	&__head
+		position: relative
+		margin: 0 0 24px 0
+		font-family: $headFont
+		font-size: 41px
+		text-transform: uppercase
+		text-align: left
+	&__star
+		position: absolute
+		top: 7px
+		right: 19px
+		font-size: 14px
+	&__text
+		font-size: 21px
+		line-height: 1.5
+		&_row
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: flex-start
+		p
+			margin: 0
+	&__img
+		width: 110px
+		height: 120px
+		margin-top: 10px
+		margin-left: 30px
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__info-icon
+		margin-top: 10px
+		margin-right: 27px
+	&__author
+		position: absolute
+		bottom: 50px
+		right: -80px
+		color: $blue-456
+		font-size: 17px
+		font-style: italic
+		transform: rotate(90deg)
+		text-decoration: none
+	&__dots
+		position: absolute
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		height: 200px
+		top: 50%
+		left: 20px
+		transform: translateY(-50%)
+		z-index: 2
+	&__dot-item
+		width: 20px
+		height: 20px
+		border-radius: 100%
+		background-color: $blue-8ab

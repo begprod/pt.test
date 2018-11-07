@@ -1,7 +1,37 @@
 html
 	box-sizing: border-box
 
+body
+	font-family: $textFont
+
 *,
 *::after,
 *::before
 	box-sizing: inherit
+
+a[target="_blank"]
+	position: relative
+	padding-right: 20px
+	color: $brown-977
+	border-bottom: 1px solid $brown-977
+	text-decoration: none
+	&::after
+		content: ""
+		position: absolute
+		top: 7px
+		right: 0
+		width: 13px
+		height: 13px
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAbUlEQVQoU2NkwAFmxUX9R5ZiRBdIW7SMEaZgVmxUAgMjw3wQH6wQWRJD0X+GRJBirArhJv1nSExbvGwByDAMheiKYDagKJyeEKHA/I/pPgPUJAzPILsRpDhzwYoHcLdC/YDTM5QpxBXoMHGQ0wBL/1JPB+5EywAAAABJRU5ErkJggg==')
+		background-repeat: no-repeat
+		background-position: center
+
+.wrapper
+	display: flex
+	justify-content: center
+	align-items: flex-start
+	max-width: 1440px
+	height: 100vh
+	margin: 0 auto
+	text-align: center
+	border: 1px dashed forestgreen

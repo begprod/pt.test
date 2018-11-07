@@ -1,3 +1,43 @@
-<div>
-	<h1>Lorem ipsum dolor sit amet.</h1>
-</div>
+<article class="card">
+	<div class="card__inner">
+		<h2 class="card__head">Мцыри <span class="i-star card__star" aria-hidden="true"></span></h2>
+		<div class="card__text card__text_row">
+			<p>
+				Однажды русский генерал <br>
+				Из гор к Тифлису проезжал; <br>
+				Ребенка пленного он вез. <br>
+				Тот занемог, не перенес <br>
+				Трудов далекого пути;
+			</p>
+			<div class="card__img">
+				<img src="./media/images/1.jpg" alt="Мцыри">
+			</div>
+		</div>
+		<div class="card__text card__text_row">
+			<div class="i-info card__info-icon" aria-hidden="true"></div>
+			<p>
+				Он был, казалось, лет шести, <br>
+				Как серна гор, пуглив и дик <br>
+				И слаб и гибок, как тростник.
+			</p>
+		</div>
+		<div class="card__text">
+			<p>
+				Но в нем мучительный недуг <br>
+				Развил тогда могучий дух <br>
+				Его отцов. <strong>Без жалоб он</strong> <br>
+				Томился, даже слабый стон <br>
+				Из детских губ не вылетал, <br>
+				Он <a href="#" target="_blank">знаком</a> пищу отвергал <br>
+				И тихо, гордо умирал.
+			</p>
+		</div>
+		<a class="card__author" href="#" rel="author">Михаил лермонтов</a>
+	</div>
+	<div class="card__dots" aria-hidden="true">
+		<div class="card__dot-item"></div>
+		<div class="card__dot-item"></div>
+		<div class="card__dot-item"></div>
+		<div class="card__dot-item"></div>
+	</div>
+</article>
